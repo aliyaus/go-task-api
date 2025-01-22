@@ -1,21 +1,19 @@
 # Project Overview: Tasks API
-An API that allows users to:
-
+This is a simple API written in Golang that allows you to do the following
 * Add tasks.
 * Get a list of tasks.
 * Get a single task by ID.
-* Update a task.
-* Delete a task.
+
+The main purpose of this project is to showcase how to develop a simple backend API service with unit testing in Golang. 
 
 # Key ideas and Concepts
+* Rest API in Golang
 * Standard Library: Use net/http for handling HTTP requests and encoding/json for JSON handling.
-* Routing: Use a lightweight router like gorilla/mux or chi.
-* Persistence: Use an in-memory store (map) for simplicity.
 * Idiomatic Go Practices: Proper structuring, error handling, and JSON encoding/decoding.
 * Basic unit testing in Golang
 
 # Steps to run project 
-1. run `go run main.go`
+* run `go run main.go`
 
 # Steps to reproduce project
 1. Install golang via their website @ https://go.dev/doc/install 
@@ -27,9 +25,9 @@ An API that allows users to:
 7. test GET endpoint by running `curl http://localhost:8080/tasks`
 
 # Sample CURLs
-GET tasks - `curl http://localhost:8080/tasks`
-GET task by ID - `curl http://localhost:8080/tasks/2`
-POST task - 
+- GET tasks - `curl http://localhost:8080/tasks`
+- GET task by ID - `curl http://localhost:8080/tasks/2`
+- POST task - 
 ```
 curl http://localhost:8080/tasks \
     --include \
@@ -42,7 +40,6 @@ curl http://localhost:8080/tasks \
 1. run `go get -u github.com/stretchr/testify`
 2. add `controller/main_test.go` & `controller/tasks_test.go`
 3. run `go test -v -cover ./controller` to test
-
 
 # References
 - https://github.com/yemiwebby/gin-gorm-restful-api/tree/main
