@@ -1,0 +1,41 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# Build directory
+/build/
+bin/
+
+# Configuration files
+*.env
+config.yaml
+config.json
+
+# Dependency directories
+vendor/
+
+# Logs and debugging
+*.log
+*.test
+coverage.out
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Go module files (you should commit go.mod and go.sum)
+# Uncomment below if you don't want to commit the module files
+# go.sum
+
+# Temporary files and caches
+*.tmp
+*.cache
+*.swp
